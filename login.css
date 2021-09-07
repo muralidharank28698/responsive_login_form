@@ -1,42 +1,52 @@
 * {
   margin: 0px;
   padding: 0px;
+  outline: none;
+  box-sizing: border-box;
 }
 body {
   background-color: ghostwhite;
   font-family: sans-serif;
 }
 #container {
-  height: 280px;
+  max-width: 500px;
+  height: 320px;
   position: absolute;
   top: 50%;
   text-align: center;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 32vw;
+  width: 400px;
   border: 1px solid rgb(246, 237, 237);
   border-radius: 6px;
   box-shadow: 1px 2px 15px 2px rgb(155, 141, 151);
 }
 #container table {
-  width: 30vw;
+  width: 90%;
   height: 90%;
   margin: 6px auto;
 }
+#container table td {
+  padding: 5px;
+}
 #container table tr td input {
-  width: 28vw;
+  width: 100%;
   height: 35px;
-  border-radius: 6px;
+  border-radius: 3px;
   font-size: 1.5vw;
   border: 1px solid rebeccapurple;
   transition: 0.25px;
   cursor: pointer;
   color: rgb(78, 10, 204);
 }
+#container table tr h3 {
+  font-size: 1rem;
+  margin-top: 8px;
+}
 #container table tr td button {
-  width: 28vw;
+  width: 100%;
   height: 35px;
-  border-radius: 8px;
+  border-radius: 3px;
   font-size: 2vw;
   color: #f0932b;
   background-color: #535c68;
@@ -44,12 +54,31 @@ body {
   font-weight: bold;
   font-family: Georgia, "Times New Roman", Times, serif;
   cursor: pointer;
+  margin-top: 6px;
 }
 #container table tr td button:hover {
   color: white;
   background-color: #30336b;
 }
 #container table tr td h2 {
-  font-size: 3vw;
-  color: rgb(25, 140, 248);
+  font-size: 150%;
+  color: #1b1464;
+}
+#container table tr td h4 {
+  color: #575fcf;
+  opacity: 0.9;
+  cursor: pointer;
+}
+#container table tr td h3 {
+  color: #1e272e;
+  opacity: 0.8;
+}
+@media screen and (max-width: 500px) {
+  #container {
+    max-width: 300px;
+    height: auto;
+  }
+  #container table {
+    width: 100%;
+  }
 }

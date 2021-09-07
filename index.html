@@ -6,41 +6,57 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>LOGIN FORM</title>
     <link rel="stylesheet" href="./login.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   </head>
   <body>
     <div id="container">
-      <table>
-        <tr>
-          <td><h2>Login</h2></td>
-        </tr>
-        <tr>
-          <td>
-            <input
-              type="mailid"
-              name="mailid"
-              value=""
-              id="mailid"
-              placeholder="enter the mailid..."
-            />
-          </td>
-        </tr>
-        <tr>
-          <td>
-            <input
-              type="password"
-              name="password"
-              value=""
-              id="pwd"
-              placeholder="enter the password..."
-            />
-          </td>
-        </tr>
-        <tr>
-          <td align="center">
-            <button id="btn" onclick="btnclick()" name="login">login</button>
-          </td>
-        </tr>
-      </table>
+      <form action="./index.html" method="">
+        <table>
+          <tr>
+            <td><h2>Login Form</h2></td>
+          </tr>
+          <tr align="left">
+            <td><h3>Enter the mailid</h3></td>
+          </tr>
+          <tr>
+            <td>
+              <input
+                type="mailid"
+                name="mailid"
+                value=""
+                id="mailid"
+                placeholder=""
+              />
+            </td>
+          </tr>
+          <tr
+            align="left
+        "
+          >
+            <td><h3>Enter the Password</h3></td>
+          </tr>
+          <tr></tr>
+          <tr>
+            <td>
+              <input
+                type="password"
+                name="password"
+                value=""
+                id="pwd"
+                placeholder=""
+              />
+            </td>
+          </tr>
+          <tr align="left">
+            <td><h4>Forget Password?</h4></td>
+          </tr>
+          <tr>
+            <td align="center">
+              <button id="btn" onclick="btnclick()" name="login">login</button>
+            </td>
+          </tr>
+        </table>
+      </form>
     </div>
     <script src="./login.js"></script>
   </body>
