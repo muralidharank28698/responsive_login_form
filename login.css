@@ -1,0 +1,55 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+body {
+  background-color: ghostwhite;
+  font-family: sans-serif;
+}
+#container {
+  height: 280px;
+  position: absolute;
+  top: 50%;
+  text-align: center;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 32vw;
+  border: 1px solid rgb(246, 237, 237);
+  border-radius: 6px;
+  box-shadow: 1px 2px 15px 2px rgb(155, 141, 151);
+}
+#container table {
+  width: 30vw;
+  height: 90%;
+  margin: 6px auto;
+}
+#container table tr td input {
+  width: 28vw;
+  height: 35px;
+  border-radius: 6px;
+  font-size: 1.5vw;
+  border: 1px solid rebeccapurple;
+  transition: 0.25px;
+  cursor: pointer;
+  color: rgb(78, 10, 204);
+}
+#container table tr td button {
+  width: 28vw;
+  height: 35px;
+  border-radius: 8px;
+  font-size: 2vw;
+  color: #f0932b;
+  background-color: #535c68;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  cursor: pointer;
+}
+#container table tr td button:hover {
+  color: white;
+  background-color: #30336b;
+}
+#container table tr td h2 {
+  font-size: 3vw;
+  color: rgb(25, 140, 248);
+}
